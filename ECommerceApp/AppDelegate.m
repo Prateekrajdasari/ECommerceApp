@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ServiceManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    ServiceManager *serviceManager = [[ServiceManager alloc] init];
+    
+    [serviceManager getDataFromServer];
+    
+    self.managedObjectContext = self.persistentContainer.viewContext;
+    
     return YES;
 }
 
