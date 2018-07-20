@@ -13,6 +13,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (nonatomic, retain) UIStoryboard *storyBoard;
+
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;

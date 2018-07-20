@@ -2,7 +2,7 @@
 //  Taxes+CoreDataProperties.h
 //  ECommerceApp
 //
-//  Created by Prateek Raj on 11/07/18.
+//  Created by Prateek Raj on 20/07/18.
 //  Copyright © 2018 Prateek Raj. All rights reserved.
 //
 //
@@ -16,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<Taxes *> *)fetchRequest;
 
-@property (nonatomic) float value;
 @property (nullable, nonatomic, copy) NSString *name;
+@property (nonatomic) float value;
 @property (nullable, nonatomic, retain) Product *products;
 
 @end

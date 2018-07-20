@@ -2,7 +2,7 @@
 //  Categories+CoreDataProperties.h
 //  ECommerceApp
 //
-//  Created by Prateek Raj on 11/07/18.
+//  Created by Prateek Raj on 20/07/18.
 //  Copyright © 2018 Prateek Raj. All rights reserved.
 //
 //
@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) int16_t categoryId;
 @property (nullable, nonatomic, copy) NSString *name;
+@property (nonatomic) int16_t numberOfProducts;
+@property (nonatomic) int16_t numberofChildCategories;
 @property (nullable, nonatomic, retain) NSSet<ChildCategories *> *childCategories;
 @property (nullable, nonatomic, retain) NSSet<Product *> *products;
 

@@ -2,7 +2,7 @@
 //  Categories+CoreDataProperties.m
 //  ECommerceApp
 //
-//  Created by Prateek Raj on 11/07/18.
+//  Created by Prateek Raj on 20/07/18.
 //  Copyright © 2018 Prateek Raj. All rights reserved.
 //
 //
@@ -17,6 +17,8 @@
 
 @dynamic categoryId;
 @dynamic name;
+@dynamic numberOfProducts;
+@dynamic numberofChildCategories;
 @dynamic childCategories;
 @dynamic products;
 

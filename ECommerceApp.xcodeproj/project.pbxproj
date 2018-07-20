@@ -12,16 +12,18 @@
 		C73D69C620F44DCB006A6744 /* ProductsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D69C520F44DCB006A6744 /* ProductsTableViewController.m */; };
 		C73D69C920F450C8006A6744 /* ServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D69C820F450C8006A6744 /* ServiceManager.m */; };
 		C73D69CC20F450E2006A6744 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D69CB20F450E2006A6744 /* DataManager.m */; };
-		C73D6AAA20F5E418006A6744 /* Categories+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D6A9820F5E418006A6744 /* Categories+CoreDataClass.m */; };
-		C73D6AAB20F5E418006A6744 /* Categories+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D6A9920F5E418006A6744 /* Categories+CoreDataProperties.m */; };
-		C73D6AAC20F5E418006A6744 /* Product+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D6A9C20F5E418006A6744 /* Product+CoreDataClass.m */; };
-		C73D6AAD20F5E418006A6744 /* Product+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D6A9D20F5E418006A6744 /* Product+CoreDataProperties.m */; };
-		C73D6AB020F5E419006A6744 /* Variant+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D6AA420F5E418006A6744 /* Variant+CoreDataClass.m */; };
-		C73D6AB120F5E419006A6744 /* Variant+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D6AA520F5E418006A6744 /* Variant+CoreDataProperties.m */; };
-		C73D6AB220F5E419006A6744 /* ChildCategories+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D6AA820F5E418006A6744 /* ChildCategories+CoreDataClass.m */; };
-		C73D6AB320F5E419006A6744 /* ChildCategories+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D6AA920F5E418006A6744 /* ChildCategories+CoreDataProperties.m */; };
-		C73D6ABE20F5E76E006A6744 /* Taxes+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D6ABC20F5E76E006A6744 /* Taxes+CoreDataClass.m */; };
-		C73D6ABF20F5E76E006A6744 /* Taxes+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D6ABD20F5E76E006A6744 /* Taxes+CoreDataProperties.m */; };
+		C75CA4162101D1E200FF5974 /* ChildCategories+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4042101D1E200FF5974 /* ChildCategories+CoreDataClass.m */; };
+		C75CA4172101D1E200FF5974 /* ChildCategories+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4052101D1E200FF5974 /* ChildCategories+CoreDataProperties.m */; };
+		C75CA4182101D1E200FF5974 /* Product+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4082101D1E200FF5974 /* Product+CoreDataClass.m */; };
+		C75CA4192101D1E200FF5974 /* Product+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4092101D1E200FF5974 /* Product+CoreDataProperties.m */; };
+		C75CA41C2101D1E200FF5974 /* Variant+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4102101D1E200FF5974 /* Variant+CoreDataClass.m */; };
+		C75CA41D2101D1E200FF5974 /* Variant+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4112101D1E200FF5974 /* Variant+CoreDataProperties.m */; };
+		C75CA41E2101D1E200FF5974 /* Taxes+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4142101D1E200FF5974 /* Taxes+CoreDataClass.m */; };
+		C75CA41F2101D1E200FF5974 /* Taxes+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4152101D1E200FF5974 /* Taxes+CoreDataProperties.m */; };
+		C75CA4242101F41100FF5974 /* Categories+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4222101F41100FF5974 /* Categories+CoreDataClass.m */; };
+		C75CA4252101F41100FF5974 /* Categories+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4232101F41100FF5974 /* Categories+CoreDataProperties.m */; };
+		C75CA4282101F78500FF5974 /* SubCategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4272101F78500FF5974 /* SubCategoriesTableViewController.m */; };
+		C75CA42A2102254F00FF5974 /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C75CA4292102254E00FF5974 /* rightArrow.png */; };
 		C76CCBEF20F35F2200C80859 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C76CCBEE20F35F2200C80859 /* AppDelegate.m */; };
 		C76CCBF220F35F2200C80859 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C76CCBF120F35F2200C80859 /* ViewController.m */; };
 		C76CCBF520F35F2200C80859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76CCBF320F35F2200C80859 /* Main.storyboard */; };
@@ -43,26 +45,29 @@
 		C73D69CA20F450E2006A6744 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		C73D69CB20F450E2006A6744 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		C73D69CD20F45A8C006A6744 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		C73D6A9620F5E418006A6744 /* Categories+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Categories+CoreDataProperties.h"; sourceTree = "<group>"; };
-		C73D6A9720F5E418006A6744 /* Categories+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Categories+CoreDataClass.h"; sourceTree = "<group>"; };
-		C73D6A9820F5E418006A6744 /* Categories+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Categories+CoreDataClass.m"; sourceTree = "<group>"; };
-		C73D6A9920F5E418006A6744 /* Categories+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Categories+CoreDataProperties.m"; sourceTree = "<group>"; };
-		C73D6A9A20F5E418006A6744 /* Product+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Product+CoreDataProperties.h"; sourceTree = "<group>"; };
-		C73D6A9B20F5E418006A6744 /* Product+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Product+CoreDataClass.h"; sourceTree = "<group>"; };
-		C73D6A9C20F5E418006A6744 /* Product+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Product+CoreDataClass.m"; sourceTree = "<group>"; };
-		C73D6A9D20F5E418006A6744 /* Product+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Product+CoreDataProperties.m"; sourceTree = "<group>"; };
-		C73D6AA220F5E418006A6744 /* Variant+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Variant+CoreDataProperties.h"; sourceTree = "<group>"; };
-		C73D6AA320F5E418006A6744 /* Variant+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Variant+CoreDataClass.h"; sourceTree = "<group>"; };
-		C73D6AA420F5E418006A6744 /* Variant+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Variant+CoreDataClass.m"; sourceTree = "<group>"; };
-		C73D6AA520F5E418006A6744 /* Variant+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Variant+CoreDataProperties.m"; sourceTree = "<group>"; };
-		C73D6AA620F5E418006A6744 /* ChildCategories+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChildCategories+CoreDataProperties.h"; sourceTree = "<group>"; };
-		C73D6AA720F5E418006A6744 /* ChildCategories+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChildCategories+CoreDataClass.h"; sourceTree = "<group>"; };
-		C73D6AA820F5E418006A6744 /* ChildCategories+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChildCategories+CoreDataClass.m"; sourceTree = "<group>"; };
-		C73D6AA920F5E418006A6744 /* ChildCategories+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChildCategories+CoreDataProperties.m"; sourceTree = "<group>"; };
-		C73D6ABA20F5E76E006A6744 /* Taxes+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taxes+CoreDataProperties.h"; sourceTree = "<group>"; };
-		C73D6ABB20F5E76E006A6744 /* Taxes+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taxes+CoreDataClass.h"; sourceTree = "<group>"; };
-		C73D6ABC20F5E76E006A6744 /* Taxes+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Taxes+CoreDataClass.m"; sourceTree = "<group>"; };
-		C73D6ABD20F5E76E006A6744 /* Taxes+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Taxes+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C75CA4022101D1E200FF5974 /* ChildCategories+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChildCategories+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C75CA4032101D1E200FF5974 /* ChildCategories+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChildCategories+CoreDataClass.h"; sourceTree = "<group>"; };
+		C75CA4042101D1E200FF5974 /* ChildCategories+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChildCategories+CoreDataClass.m"; sourceTree = "<group>"; };
+		C75CA4052101D1E200FF5974 /* ChildCategories+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChildCategories+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C75CA4062101D1E200FF5974 /* Product+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Product+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C75CA4072101D1E200FF5974 /* Product+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Product+CoreDataClass.h"; sourceTree = "<group>"; };
+		C75CA4082101D1E200FF5974 /* Product+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Product+CoreDataClass.m"; sourceTree = "<group>"; };
+		C75CA4092101D1E200FF5974 /* Product+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Product+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C75CA40E2101D1E200FF5974 /* Variant+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Variant+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C75CA40F2101D1E200FF5974 /* Variant+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Variant+CoreDataClass.h"; sourceTree = "<group>"; };
+		C75CA4102101D1E200FF5974 /* Variant+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Variant+CoreDataClass.m"; sourceTree = "<group>"; };
+		C75CA4112101D1E200FF5974 /* Variant+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Variant+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C75CA4122101D1E200FF5974 /* Taxes+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taxes+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C75CA4132101D1E200FF5974 /* Taxes+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taxes+CoreDataClass.h"; sourceTree = "<group>"; };
+		C75CA4142101D1E200FF5974 /* Taxes+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Taxes+CoreDataClass.m"; sourceTree = "<group>"; };
+		C75CA4152101D1E200FF5974 /* Taxes+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Taxes+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C75CA4202101F41100FF5974 /* Categories+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Categories+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C75CA4212101F41100FF5974 /* Categories+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Categories+CoreDataClass.h"; sourceTree = "<group>"; };
+		C75CA4222101F41100FF5974 /* Categories+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Categories+CoreDataClass.m"; sourceTree = "<group>"; };
+		C75CA4232101F41100FF5974 /* Categories+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Categories+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C75CA4262101F78500FF5974 /* SubCategoriesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubCategoriesTableViewController.h; sourceTree = "<group>"; };
+		C75CA4272101F78500FF5974 /* SubCategoriesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubCategoriesTableViewController.m; sourceTree = "<group>"; };
+		C75CA4292102254E00FF5974 /* rightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightArrow.png; sourceTree = "<group>"; };
 		C76CCBEA20F35F2200C80859 /* ECommerceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECommerceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76CCBED20F35F2200C80859 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C76CCBEE20F35F2200C80859 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,6 +123,7 @@
 				C76CCBF120F35F2200C80859 /* ViewController.m */,
 				C76CCBF320F35F2200C80859 /* Main.storyboard */,
 				C76CCBF920F35F2500C80859 /* Assets.xcassets */,
+				C75CA4292102254E00FF5974 /* rightArrow.png */,
 				C76CCBFB20F35F2500C80859 /* LaunchScreen.storyboard */,
 				C76CCBFE20F35F2500C80859 /* Info.plist */,
 				C76CCBFF20F35F2500C80859 /* main.m */,
@@ -128,6 +134,8 @@
 				C73D69BF20F44D5E006A6744 /* DetailViewController.m */,
 				C73D69C420F44DCB006A6744 /* ProductsTableViewController.h */,
 				C73D69C520F44DCB006A6744 /* ProductsTableViewController.m */,
+				C75CA4262101F78500FF5974 /* SubCategoriesTableViewController.h */,
+				C75CA4272101F78500FF5974 /* SubCategoriesTableViewController.m */,
 			);
 			path = ECommerceApp;
 			sourceTree = "<group>";
@@ -135,26 +143,26 @@
 		C76CCC0D20F365AD00C80859 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				C73D6ABA20F5E76E006A6744 /* Taxes+CoreDataProperties.h */,
-				C73D6ABB20F5E76E006A6744 /* Taxes+CoreDataClass.h */,
-				C73D6ABC20F5E76E006A6744 /* Taxes+CoreDataClass.m */,
-				C73D6ABD20F5E76E006A6744 /* Taxes+CoreDataProperties.m */,
-				C73D6A9620F5E418006A6744 /* Categories+CoreDataProperties.h */,
-				C73D6A9720F5E418006A6744 /* Categories+CoreDataClass.h */,
-				C73D6A9820F5E418006A6744 /* Categories+CoreDataClass.m */,
-				C73D6A9920F5E418006A6744 /* Categories+CoreDataProperties.m */,
-				C73D6A9A20F5E418006A6744 /* Product+CoreDataProperties.h */,
-				C73D6A9B20F5E418006A6744 /* Product+CoreDataClass.h */,
-				C73D6A9C20F5E418006A6744 /* Product+CoreDataClass.m */,
-				C73D6A9D20F5E418006A6744 /* Product+CoreDataProperties.m */,
-				C73D6AA220F5E418006A6744 /* Variant+CoreDataProperties.h */,
-				C73D6AA320F5E418006A6744 /* Variant+CoreDataClass.h */,
-				C73D6AA420F5E418006A6744 /* Variant+CoreDataClass.m */,
-				C73D6AA520F5E418006A6744 /* Variant+CoreDataProperties.m */,
-				C73D6AA620F5E418006A6744 /* ChildCategories+CoreDataProperties.h */,
-				C73D6AA720F5E418006A6744 /* ChildCategories+CoreDataClass.h */,
-				C73D6AA820F5E418006A6744 /* ChildCategories+CoreDataClass.m */,
-				C73D6AA920F5E418006A6744 /* ChildCategories+CoreDataProperties.m */,
+				C75CA4202101F41100FF5974 /* Categories+CoreDataProperties.h */,
+				C75CA4212101F41100FF5974 /* Categories+CoreDataClass.h */,
+				C75CA4222101F41100FF5974 /* Categories+CoreDataClass.m */,
+				C75CA4232101F41100FF5974 /* Categories+CoreDataProperties.m */,
+				C75CA4022101D1E200FF5974 /* ChildCategories+CoreDataProperties.h */,
+				C75CA4032101D1E200FF5974 /* ChildCategories+CoreDataClass.h */,
+				C75CA4042101D1E200FF5974 /* ChildCategories+CoreDataClass.m */,
+				C75CA4052101D1E200FF5974 /* ChildCategories+CoreDataProperties.m */,
+				C75CA4062101D1E200FF5974 /* Product+CoreDataProperties.h */,
+				C75CA4072101D1E200FF5974 /* Product+CoreDataClass.h */,
+				C75CA4082101D1E200FF5974 /* Product+CoreDataClass.m */,
+				C75CA4092101D1E200FF5974 /* Product+CoreDataProperties.m */,
+				C75CA40E2101D1E200FF5974 /* Variant+CoreDataProperties.h */,
+				C75CA40F2101D1E200FF5974 /* Variant+CoreDataClass.h */,
+				C75CA4102101D1E200FF5974 /* Variant+CoreDataClass.m */,
+				C75CA4112101D1E200FF5974 /* Variant+CoreDataProperties.m */,
+				C75CA4122101D1E200FF5974 /* Taxes+CoreDataProperties.h */,
+				C75CA4132101D1E200FF5974 /* Taxes+CoreDataClass.h */,
+				C75CA4142101D1E200FF5974 /* Taxes+CoreDataClass.m */,
+				C75CA4152101D1E200FF5974 /* Taxes+CoreDataProperties.m */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 			files = (
 				C76CCBFD20F35F2500C80859 /* LaunchScreen.storyboard in Resources */,
 				C76CCBFA20F35F2500C80859 /* Assets.xcassets in Resources */,
+				C75CA42A2102254F00FF5974 /* rightArrow.png in Resources */,
 				C76CCBF520F35F2200C80859 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,25 +238,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75CA4172101D1E200FF5974 /* ChildCategories+CoreDataProperties.m in Sources */,
+				C75CA4242101F41100FF5974 /* Categories+CoreDataClass.m in Sources */,
 				C76CCBF820F35F2200C80859 /* ECommerceApp.xcdatamodeld in Sources */,
 				C76CCC0020F35F2500C80859 /* main.m in Sources */,
 				C76CCBEF20F35F2200C80859 /* AppDelegate.m in Sources */,
 				C73D69C920F450C8006A6744 /* ServiceManager.m in Sources */,
+				C75CA41E2101D1E200FF5974 /* Taxes+CoreDataClass.m in Sources */,
+				C75CA41D2101D1E200FF5974 /* Variant+CoreDataProperties.m in Sources */,
+				C75CA4162101D1E200FF5974 /* ChildCategories+CoreDataClass.m in Sources */,
 				C73D69CC20F450E2006A6744 /* DataManager.m in Sources */,
-				C73D6ABE20F5E76E006A6744 /* Taxes+CoreDataClass.m in Sources */,
+				C75CA4252101F41100FF5974 /* Categories+CoreDataProperties.m in Sources */,
+				C75CA4192101D1E200FF5974 /* Product+CoreDataProperties.m in Sources */,
+				C75CA41F2101D1E200FF5974 /* Taxes+CoreDataProperties.m in Sources */,
+				C75CA4182101D1E200FF5974 /* Product+CoreDataClass.m in Sources */,
+				C75CA41C2101D1E200FF5974 /* Variant+CoreDataClass.m in Sources */,
 				C76CCBF220F35F2200C80859 /* ViewController.m in Sources */,
+				C75CA4282101F78500FF5974 /* SubCategoriesTableViewController.m in Sources */,
 				C73D69BD20F44D4F006A6744 /* RankingViewController.m in Sources */,
 				C73D69C620F44DCB006A6744 /* ProductsTableViewController.m in Sources */,
 				C73D69C020F44D5E006A6744 /* DetailViewController.m in Sources */,
-				C73D6AB020F5E419006A6744 /* Variant+CoreDataClass.m in Sources */,
-				C73D6AB120F5E419006A6744 /* Variant+CoreDataProperties.m in Sources */,
-				C73D6ABF20F5E76E006A6744 /* Taxes+CoreDataProperties.m in Sources */,
-				C73D6AAC20F5E418006A6744 /* Product+CoreDataClass.m in Sources */,
-				C73D6AAD20F5E418006A6744 /* Product+CoreDataProperties.m in Sources */,
-				C73D6AB220F5E419006A6744 /* ChildCategories+CoreDataClass.m in Sources */,
-				C73D6AB320F5E419006A6744 /* ChildCategories+CoreDataProperties.m in Sources */,
-				C73D6AAA20F5E418006A6744 /* Categories+CoreDataClass.m in Sources */,
-				C73D6AAB20F5E418006A6744 /* Categories+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PREFIX_HEADER = /Users/prateekraj/Desktop/Projects/Samples/ECommerceApp/ECommerceApp/PrefixHeader.pch;
@@ -406,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PREFIX_HEADER = /Users/prateekraj/Desktop/Projects/Samples/ECommerceApp/ECommerceApp/PrefixHeader.pch;

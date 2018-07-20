@@ -8,7 +8,13 @@
 
 #import "RankingViewController.h"
 
-@interface RankingViewController ()
+@interface RankingViewController () <UITableViewDataSource, UITableViewDelegate> {
+    
+    NSString *keyName;
+    
+    NSArray *dataArray;
+}
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -17,6 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self loadDataWithIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +32,81 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)segmentButtonClicked:(id)sender {
+    
+    UISegmentedControl *segmentControl = (UISegmentedControl *)sender;
+    
+    [self loadDataWithIndex:(int)segmentControl.selectedSegmentIndex];
 }
-*/
+
+- (void)loadDataWithIndex:(int)index {
+    
+    if (index == 0)
+        keyName = @"viewCount";
+    else if (index == 1)
+        keyName = @"orderCount";
+    else
+        keyName = @"shareCount";
+    
+    dataArray = [DATAMANAGER getArrayforEntity:@"Product"
+                           filterwithPredicate:[NSString stringWithFormat:@"%@ != 0",keyName]
+                                   sortWithKey:keyName
+                                   isAscending:NO];
+    
+    [self.tableView reloadData];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TABLECELL"];
+    
+    if (!cell)
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"TABLECELL"];
+    
+    Product *product = dataArray[indexPath.row];
+    
+    cell.textLabel.text = product.name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@:%d",keyName,[[product valueForKey:keyName] intValue]];
+    
+    return cell;
+}
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

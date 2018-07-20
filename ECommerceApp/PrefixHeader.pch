@@ -12,8 +12,8 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "AppDelegate.h"
-#import "ServiceManager.h"
 #import "DataManager.h"
+#import "ServiceManager.h"
 
 #import "Categories+CoreDataProperties.h"
 #import "ChildCategories+CoreDataProperties.h"
@@ -21,9 +21,10 @@
 #import "Taxes+CoreDataProperties.h"
 #import "Variant+CoreDataProperties.h"
 
+#define DATAMANAGER [DataManager sharedInstance]
 #define APPDELEGATE ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 #define USERDEFAULTS [NSUserDefaults standardUserDefaults]
 #define SERVICEMANAGER [ServiceManager sharedInstance]
-#define DATAMANAGER [DataManager sharedInstance]
+
 
 #endif /* PrefixHeader_pch */

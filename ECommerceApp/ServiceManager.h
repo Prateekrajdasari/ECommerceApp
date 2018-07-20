@@ -12,6 +12,6 @@
 
 + (ServiceManager *) sharedInstance;
 
--(void)getDataFromServer;
+- (void)getDataFromServer;
 
 @end

@@ -10,4 +10,6 @@
 
 @interface DetailViewController : UIViewController
 
+- (void)loadProductDetails:(Product *)product;
+
 @end

@@ -2,7 +2,7 @@
 //  Taxes+CoreDataProperties.m
 //  ECommerceApp
 //
-//  Created by Prateek Raj on 11/07/18.
+//  Created by Prateek Raj on 20/07/18.
 //  Copyright © 2018 Prateek Raj. All rights reserved.
 //
 //
@@ -15,8 +15,8 @@
 	return [NSFetchRequest fetchRequestWithEntityName:@"Taxes"];
 }
 
-@dynamic value;
 @dynamic name;
+@dynamic value;
 @dynamic products;
 
 @end

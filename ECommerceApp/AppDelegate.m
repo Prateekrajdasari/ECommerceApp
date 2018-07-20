@@ -19,11 +19,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    ServiceManager *serviceManager = [[ServiceManager alloc] init];
-    
-    [serviceManager getDataFromServer];
+    self.storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     
     self.managedObjectContext = self.persistentContainer.viewContext;
+    
+    [SERVICEMANAGER getDataFromServer];
     
     return YES;
 }
@@ -100,6 +100,10 @@
         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
         NSLog(@"Unresolved error %@, %@", error, error.userInfo);
         abort();
+    } else {
+        
+        //The use of this notification is to inform the entire instance of the application of the changes in the database.
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"UPDATEDDATABASE" object:nil];
     }
 }
 

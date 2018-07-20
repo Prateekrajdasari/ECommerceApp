@@ -10,6 +10,11 @@
 
 @interface DataManager : NSObject
 
-+ (ServiceManager *) sharedInstance;
++ (DataManager *) sharedInstance;
+
 - (NSArray *)getArrayforEntity:(NSString *)entityString filterwithPredicate:(NSString *)predicate sortWithKey:(NSString *)sortKey isAscending:(BOOL)isAscending;
+- (BOOL)checkIfDataAlreadyExists;
+- (void)pushDataToCoreData:(NSDictionary *) dataArray;
+- (void)removeAllExistingData;
+
 @end

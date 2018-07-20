@@ -3,10 +3,13 @@
     <entity name="Categories" representedClassName="Categories" syncable="YES">
         <attribute name="categoryId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberofChildCategories" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberOfProducts" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="childCategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChildCategories" inverseName="category" inverseEntity="ChildCategories" syncable="YES"/>
         <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="category" inverseEntity="Product" syncable="YES"/>
     </entity>
     <entity name="ChildCategories" representedClassName="ChildCategories" syncable="YES">
+        <attribute name="categoryId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categories" inverseName="childCategories" inverseEntity="Categories" syncable="YES"/>
     </entity>
     <entity name="Product" representedClassName="Product" syncable="YES">
@@ -33,10 +36,10 @@
         <relationship name="products" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="variants" inverseEntity="Product" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Categories" positionX="-495" positionY="-258" width="128" height="103"/>
-        <element name="ChildCategories" positionX="-486" positionY="-15" width="128" height="58"/>
+        <element name="Categories" positionX="-495" positionY="-258" width="128" height="133"/>
+        <element name="ChildCategories" positionX="-486" positionY="-15" width="128" height="75"/>
         <element name="Product" positionX="-263" positionY="-243" width="128" height="178"/>
-        <element name="Variant" positionX="-29" positionY="-162" width="128" height="118"/>
         <element name="Taxes" positionX="-38" positionY="-252" width="128" height="88"/>
+        <element name="Variant" positionX="-29" positionY="-162" width="128" height="118"/>
     </elements>
 </model>

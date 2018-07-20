@@ -7,8 +7,14 @@
 //
 
 #import "ProductsTableViewController.h"
+#import "SubCategoriesTableViewController.h"
 
-@interface ProductsTableViewController ()
+@interface ProductsTableViewController () {
+    
+    NSArray *categories;
+    
+    SubCategoriesTableViewController *subCategoriesTVC;
+}
 
 @end
 
@@ -17,11 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(databaseUpdated:) name:@"UPDATEDDATABASE" object:nil];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self getCategoriesFromCoreData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,70 +33,110 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)databaseUpdated:(NSNotification *) notification {
+    
+    [self.tableView reloadData];
+}
+
+- (void)getCategoriesFromCoreData {
+    
+    categories = [DATAMANAGER getArrayforEntity:@"Categories"
+                            filterwithPredicate:nil
+                                    sortWithKey:nil
+                                    isAscending:NO];
+    
+    categories = [categories sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"numberOfProducts" ascending:NO]]];
+    
+    [self.tableView reloadData];
+}
+
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return categories.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    
+    Categories *category = categories[section];
+    
+    NSArray *products = category.products.allObjects;
+    
+    return products.count;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     
-    // Configure the cell...
+    return 44;
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 44)];
+    
+    view.tag = section;
+    
+    [view setUserInteractionEnabled:YES];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, view.frame.size.width, 40)];
+    [label setFont:[UIFont boldSystemFontOfSize:17]];
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    [view addSubview:label];
+    
+    Categories *category = categories[section];
+    
+    if (category.numberofChildCategories > 0) {
+        
+        [view setBackgroundColor:[UIColor cyanColor]];
+        
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didSelectSectionHeder:)];
+        
+        UIImageView *arrow = [[UIImageView alloc] initWithFrame:CGRectMake(tableView.frame.size.width-60, 10, 33, 33)];
+        
+        arrow.image = [UIImage imageNamed:@"rightArrow"];
+        
+        [view addSubview:arrow];
+        
+        [view addGestureRecognizer:tapGesture];
+    } else {
+        
+        [view setBackgroundColor:[UIColor lightGrayColor]];
+    }
+    
+    label.text = category.name;
+    
+    return view;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TABLECELL" forIndexPath:indexPath];
+    
+    if (!cell)
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TABLECELL"];
+    
+    Categories *category = categories[indexPath.section];
+    
+    NSArray *products = category.products.allObjects;
+    
+    Product *product = products[indexPath.row];
+    
+    cell.textLabel.text = product.name;
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)didSelectSectionHeder:(UITapGestureRecognizer *)tapGesture {
+    
+    if (!subCategoriesTVC)
+        subCategoriesTVC = [APPDELEGATE.storyBoard instantiateViewControllerWithIdentifier:@"SubCategoriesTableViewController"];
+    
+    [subCategoriesTVC loadCategoryDetails:categories[tapGesture.view.tag]];
+    [self.navigationController pushViewController:subCategoriesTVC animated:YES];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

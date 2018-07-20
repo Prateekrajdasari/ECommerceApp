@@ -2,7 +2,7 @@
 //  Product+CoreDataProperties.h
 //  ECommerceApp
 //
-//  Created by Prateek Raj on 11/07/18.
+//  Created by Prateek Raj on 20/07/18.
 //  Copyright © 2018 Prateek Raj. All rights reserved.
 //
 //
@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) int16_t shareCount;
 @property (nonatomic) int16_t viewCount;
 @property (nullable, nonatomic, retain) Categories *category;
-@property (nullable, nonatomic, retain) Tax *taxes;
+@property (nullable, nonatomic, retain) Taxes *taxes;
 @property (nullable, nonatomic, retain) NSSet<Variant *> *variants;
 
 @end
