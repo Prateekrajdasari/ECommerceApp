@@ -94,7 +94,7 @@
     [sizeLabel setText:[NSString stringWithFormat:@"%d",variant.size]];
     [priceLabel setText:[NSString stringWithFormat:@"%d",variant.price]];
     [taxlabel setText:[NSString stringWithFormat:@"%.02f",tax.value]];
-    [totalLabel setText:[NSString stringWithFormat:@"%.02f",(variant.price*tax.value)]];
+    [totalLabel setText:[NSString stringWithFormat:@"%.02f",(variant.price+((tax.value*variant.price)/100))]];
     
     return cell;
 }

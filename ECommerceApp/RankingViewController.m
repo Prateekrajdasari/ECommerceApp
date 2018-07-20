@@ -7,12 +7,15 @@
 //
 
 #import "RankingViewController.h"
+#import "DetailViewController.h"
 
 @interface RankingViewController () <UITableViewDataSource, UITableViewDelegate> {
     
     NSString *keyName;
     
     NSArray *dataArray;
+    
+    DetailViewController *detailsVC;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -75,6 +78,25 @@
     
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (!detailsVC)
+        detailsVC = [APPDELEGATE.storyBoard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    Product *product = [DATAMANAGER getArrayforEntity:@"Product"
+                                  filterwithPredicate:[NSString stringWithFormat:@"name MATCHES '%@'",cell.textLabel.text]
+                                          sortWithKey:nil isAscending:NO].lastObject;
+    
+    [detailsVC loadProductDetails:product];
+    
+    [self.navigationController pushViewController:detailsVC animated:YES];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 
 @end
 

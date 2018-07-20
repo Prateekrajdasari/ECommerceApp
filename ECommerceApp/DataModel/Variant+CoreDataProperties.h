@@ -17,9 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSFetchRequest<Variant *> *)fetchRequest;
 
 @property (nullable, nonatomic, copy) NSString *color;
-@property (nonatomic) int16_t price;
-@property (nonatomic) int16_t size;
-@property (nonatomic) int16_t variantId;
+@property (nonatomic) int32_t price;
+@property (nonatomic) int32_t size;
+@property (nonatomic) int32_t variantId;
 @property (nullable, nonatomic, retain) Product *products;
 
 @end

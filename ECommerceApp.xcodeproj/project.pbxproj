@@ -12,18 +12,18 @@
 		C73D69C620F44DCB006A6744 /* ProductsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D69C520F44DCB006A6744 /* ProductsTableViewController.m */; };
 		C73D69C920F450C8006A6744 /* ServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D69C820F450C8006A6744 /* ServiceManager.m */; };
 		C73D69CC20F450E2006A6744 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C73D69CB20F450E2006A6744 /* DataManager.m */; };
-		C75CA4162101D1E200FF5974 /* ChildCategories+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4042101D1E200FF5974 /* ChildCategories+CoreDataClass.m */; };
-		C75CA4172101D1E200FF5974 /* ChildCategories+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4052101D1E200FF5974 /* ChildCategories+CoreDataProperties.m */; };
-		C75CA4182101D1E200FF5974 /* Product+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4082101D1E200FF5974 /* Product+CoreDataClass.m */; };
-		C75CA4192101D1E200FF5974 /* Product+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4092101D1E200FF5974 /* Product+CoreDataProperties.m */; };
-		C75CA41C2101D1E200FF5974 /* Variant+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4102101D1E200FF5974 /* Variant+CoreDataClass.m */; };
-		C75CA41D2101D1E200FF5974 /* Variant+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4112101D1E200FF5974 /* Variant+CoreDataProperties.m */; };
-		C75CA41E2101D1E200FF5974 /* Taxes+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4142101D1E200FF5974 /* Taxes+CoreDataClass.m */; };
-		C75CA41F2101D1E200FF5974 /* Taxes+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4152101D1E200FF5974 /* Taxes+CoreDataProperties.m */; };
-		C75CA4242101F41100FF5974 /* Categories+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4222101F41100FF5974 /* Categories+CoreDataClass.m */; };
-		C75CA4252101F41100FF5974 /* Categories+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4232101F41100FF5974 /* Categories+CoreDataProperties.m */; };
 		C75CA4282101F78500FF5974 /* SubCategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA4272101F78500FF5974 /* SubCategoriesTableViewController.m */; };
 		C75CA42A2102254F00FF5974 /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C75CA4292102254E00FF5974 /* rightArrow.png */; };
+		C75CA43F21023C8D00FF5974 /* Variant+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA42D21023C8D00FF5974 /* Variant+CoreDataClass.m */; };
+		C75CA44021023C8D00FF5974 /* Variant+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA42E21023C8D00FF5974 /* Variant+CoreDataProperties.m */; };
+		C75CA44121023C8D00FF5974 /* Categories+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA43121023C8D00FF5974 /* Categories+CoreDataClass.m */; };
+		C75CA44221023C8D00FF5974 /* Categories+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA43221023C8D00FF5974 /* Categories+CoreDataProperties.m */; };
+		C75CA44321023C8D00FF5974 /* ChildCategories+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA43521023C8D00FF5974 /* ChildCategories+CoreDataClass.m */; };
+		C75CA44421023C8D00FF5974 /* ChildCategories+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA43621023C8D00FF5974 /* ChildCategories+CoreDataProperties.m */; };
+		C75CA44521023C8D00FF5974 /* Taxes+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA43921023C8D00FF5974 /* Taxes+CoreDataClass.m */; };
+		C75CA44621023C8D00FF5974 /* Taxes+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA43A21023C8D00FF5974 /* Taxes+CoreDataProperties.m */; };
+		C75CA44721023C8D00FF5974 /* Product+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA43D21023C8D00FF5974 /* Product+CoreDataClass.m */; };
+		C75CA44821023C8D00FF5974 /* Product+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C75CA43E21023C8D00FF5974 /* Product+CoreDataProperties.m */; };
 		C76CCBEF20F35F2200C80859 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C76CCBEE20F35F2200C80859 /* AppDelegate.m */; };
 		C76CCBF220F35F2200C80859 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C76CCBF120F35F2200C80859 /* ViewController.m */; };
 		C76CCBF520F35F2200C80859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76CCBF320F35F2200C80859 /* Main.storyboard */; };
@@ -45,29 +45,29 @@
 		C73D69CA20F450E2006A6744 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		C73D69CB20F450E2006A6744 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		C73D69CD20F45A8C006A6744 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		C75CA4022101D1E200FF5974 /* ChildCategories+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChildCategories+CoreDataProperties.h"; sourceTree = "<group>"; };
-		C75CA4032101D1E200FF5974 /* ChildCategories+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChildCategories+CoreDataClass.h"; sourceTree = "<group>"; };
-		C75CA4042101D1E200FF5974 /* ChildCategories+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChildCategories+CoreDataClass.m"; sourceTree = "<group>"; };
-		C75CA4052101D1E200FF5974 /* ChildCategories+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChildCategories+CoreDataProperties.m"; sourceTree = "<group>"; };
-		C75CA4062101D1E200FF5974 /* Product+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Product+CoreDataProperties.h"; sourceTree = "<group>"; };
-		C75CA4072101D1E200FF5974 /* Product+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Product+CoreDataClass.h"; sourceTree = "<group>"; };
-		C75CA4082101D1E200FF5974 /* Product+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Product+CoreDataClass.m"; sourceTree = "<group>"; };
-		C75CA4092101D1E200FF5974 /* Product+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Product+CoreDataProperties.m"; sourceTree = "<group>"; };
-		C75CA40E2101D1E200FF5974 /* Variant+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Variant+CoreDataProperties.h"; sourceTree = "<group>"; };
-		C75CA40F2101D1E200FF5974 /* Variant+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Variant+CoreDataClass.h"; sourceTree = "<group>"; };
-		C75CA4102101D1E200FF5974 /* Variant+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Variant+CoreDataClass.m"; sourceTree = "<group>"; };
-		C75CA4112101D1E200FF5974 /* Variant+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Variant+CoreDataProperties.m"; sourceTree = "<group>"; };
-		C75CA4122101D1E200FF5974 /* Taxes+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taxes+CoreDataProperties.h"; sourceTree = "<group>"; };
-		C75CA4132101D1E200FF5974 /* Taxes+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taxes+CoreDataClass.h"; sourceTree = "<group>"; };
-		C75CA4142101D1E200FF5974 /* Taxes+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Taxes+CoreDataClass.m"; sourceTree = "<group>"; };
-		C75CA4152101D1E200FF5974 /* Taxes+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Taxes+CoreDataProperties.m"; sourceTree = "<group>"; };
-		C75CA4202101F41100FF5974 /* Categories+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Categories+CoreDataProperties.h"; sourceTree = "<group>"; };
-		C75CA4212101F41100FF5974 /* Categories+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Categories+CoreDataClass.h"; sourceTree = "<group>"; };
-		C75CA4222101F41100FF5974 /* Categories+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Categories+CoreDataClass.m"; sourceTree = "<group>"; };
-		C75CA4232101F41100FF5974 /* Categories+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Categories+CoreDataProperties.m"; sourceTree = "<group>"; };
 		C75CA4262101F78500FF5974 /* SubCategoriesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubCategoriesTableViewController.h; sourceTree = "<group>"; };
 		C75CA4272101F78500FF5974 /* SubCategoriesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubCategoriesTableViewController.m; sourceTree = "<group>"; };
 		C75CA4292102254E00FF5974 /* rightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightArrow.png; sourceTree = "<group>"; };
+		C75CA42B21023C8D00FF5974 /* Variant+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Variant+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C75CA42C21023C8D00FF5974 /* Variant+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Variant+CoreDataClass.h"; sourceTree = "<group>"; };
+		C75CA42D21023C8D00FF5974 /* Variant+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Variant+CoreDataClass.m"; sourceTree = "<group>"; };
+		C75CA42E21023C8D00FF5974 /* Variant+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Variant+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C75CA42F21023C8D00FF5974 /* Categories+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Categories+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C75CA43021023C8D00FF5974 /* Categories+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Categories+CoreDataClass.h"; sourceTree = "<group>"; };
+		C75CA43121023C8D00FF5974 /* Categories+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Categories+CoreDataClass.m"; sourceTree = "<group>"; };
+		C75CA43221023C8D00FF5974 /* Categories+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Categories+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C75CA43321023C8D00FF5974 /* ChildCategories+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChildCategories+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C75CA43421023C8D00FF5974 /* ChildCategories+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChildCategories+CoreDataClass.h"; sourceTree = "<group>"; };
+		C75CA43521023C8D00FF5974 /* ChildCategories+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChildCategories+CoreDataClass.m"; sourceTree = "<group>"; };
+		C75CA43621023C8D00FF5974 /* ChildCategories+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChildCategories+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C75CA43721023C8D00FF5974 /* Taxes+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taxes+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C75CA43821023C8D00FF5974 /* Taxes+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taxes+CoreDataClass.h"; sourceTree = "<group>"; };
+		C75CA43921023C8D00FF5974 /* Taxes+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Taxes+CoreDataClass.m"; sourceTree = "<group>"; };
+		C75CA43A21023C8D00FF5974 /* Taxes+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Taxes+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C75CA43B21023C8D00FF5974 /* Product+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Product+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C75CA43C21023C8D00FF5974 /* Product+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Product+CoreDataClass.h"; sourceTree = "<group>"; };
+		C75CA43D21023C8D00FF5974 /* Product+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Product+CoreDataClass.m"; sourceTree = "<group>"; };
+		C75CA43E21023C8D00FF5974 /* Product+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Product+CoreDataProperties.m"; sourceTree = "<group>"; };
 		C76CCBEA20F35F2200C80859 /* ECommerceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECommerceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76CCBED20F35F2200C80859 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C76CCBEE20F35F2200C80859 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -143,26 +143,26 @@
 		C76CCC0D20F365AD00C80859 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				C75CA4202101F41100FF5974 /* Categories+CoreDataProperties.h */,
-				C75CA4212101F41100FF5974 /* Categories+CoreDataClass.h */,
-				C75CA4222101F41100FF5974 /* Categories+CoreDataClass.m */,
-				C75CA4232101F41100FF5974 /* Categories+CoreDataProperties.m */,
-				C75CA4022101D1E200FF5974 /* ChildCategories+CoreDataProperties.h */,
-				C75CA4032101D1E200FF5974 /* ChildCategories+CoreDataClass.h */,
-				C75CA4042101D1E200FF5974 /* ChildCategories+CoreDataClass.m */,
-				C75CA4052101D1E200FF5974 /* ChildCategories+CoreDataProperties.m */,
-				C75CA4062101D1E200FF5974 /* Product+CoreDataProperties.h */,
-				C75CA4072101D1E200FF5974 /* Product+CoreDataClass.h */,
-				C75CA4082101D1E200FF5974 /* Product+CoreDataClass.m */,
-				C75CA4092101D1E200FF5974 /* Product+CoreDataProperties.m */,
-				C75CA40E2101D1E200FF5974 /* Variant+CoreDataProperties.h */,
-				C75CA40F2101D1E200FF5974 /* Variant+CoreDataClass.h */,
-				C75CA4102101D1E200FF5974 /* Variant+CoreDataClass.m */,
-				C75CA4112101D1E200FF5974 /* Variant+CoreDataProperties.m */,
-				C75CA4122101D1E200FF5974 /* Taxes+CoreDataProperties.h */,
-				C75CA4132101D1E200FF5974 /* Taxes+CoreDataClass.h */,
-				C75CA4142101D1E200FF5974 /* Taxes+CoreDataClass.m */,
-				C75CA4152101D1E200FF5974 /* Taxes+CoreDataProperties.m */,
+				C75CA42B21023C8D00FF5974 /* Variant+CoreDataProperties.h */,
+				C75CA42C21023C8D00FF5974 /* Variant+CoreDataClass.h */,
+				C75CA42D21023C8D00FF5974 /* Variant+CoreDataClass.m */,
+				C75CA42E21023C8D00FF5974 /* Variant+CoreDataProperties.m */,
+				C75CA42F21023C8D00FF5974 /* Categories+CoreDataProperties.h */,
+				C75CA43021023C8D00FF5974 /* Categories+CoreDataClass.h */,
+				C75CA43121023C8D00FF5974 /* Categories+CoreDataClass.m */,
+				C75CA43221023C8D00FF5974 /* Categories+CoreDataProperties.m */,
+				C75CA43321023C8D00FF5974 /* ChildCategories+CoreDataProperties.h */,
+				C75CA43421023C8D00FF5974 /* ChildCategories+CoreDataClass.h */,
+				C75CA43521023C8D00FF5974 /* ChildCategories+CoreDataClass.m */,
+				C75CA43621023C8D00FF5974 /* ChildCategories+CoreDataProperties.m */,
+				C75CA43721023C8D00FF5974 /* Taxes+CoreDataProperties.h */,
+				C75CA43821023C8D00FF5974 /* Taxes+CoreDataClass.h */,
+				C75CA43921023C8D00FF5974 /* Taxes+CoreDataClass.m */,
+				C75CA43A21023C8D00FF5974 /* Taxes+CoreDataProperties.m */,
+				C75CA43B21023C8D00FF5974 /* Product+CoreDataProperties.h */,
+				C75CA43C21023C8D00FF5974 /* Product+CoreDataClass.h */,
+				C75CA43D21023C8D00FF5974 /* Product+CoreDataClass.m */,
+				C75CA43E21023C8D00FF5974 /* Product+CoreDataProperties.m */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -238,26 +238,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C75CA4172101D1E200FF5974 /* ChildCategories+CoreDataProperties.m in Sources */,
-				C75CA4242101F41100FF5974 /* Categories+CoreDataClass.m in Sources */,
 				C76CCBF820F35F2200C80859 /* ECommerceApp.xcdatamodeld in Sources */,
 				C76CCC0020F35F2500C80859 /* main.m in Sources */,
+				C75CA44121023C8D00FF5974 /* Categories+CoreDataClass.m in Sources */,
+				C75CA44721023C8D00FF5974 /* Product+CoreDataClass.m in Sources */,
 				C76CCBEF20F35F2200C80859 /* AppDelegate.m in Sources */,
+				C75CA44421023C8D00FF5974 /* ChildCategories+CoreDataProperties.m in Sources */,
+				C75CA44321023C8D00FF5974 /* ChildCategories+CoreDataClass.m in Sources */,
+				C75CA44821023C8D00FF5974 /* Product+CoreDataProperties.m in Sources */,
+				C75CA44021023C8D00FF5974 /* Variant+CoreDataProperties.m in Sources */,
 				C73D69C920F450C8006A6744 /* ServiceManager.m in Sources */,
-				C75CA41E2101D1E200FF5974 /* Taxes+CoreDataClass.m in Sources */,
-				C75CA41D2101D1E200FF5974 /* Variant+CoreDataProperties.m in Sources */,
-				C75CA4162101D1E200FF5974 /* ChildCategories+CoreDataClass.m in Sources */,
 				C73D69CC20F450E2006A6744 /* DataManager.m in Sources */,
-				C75CA4252101F41100FF5974 /* Categories+CoreDataProperties.m in Sources */,
-				C75CA4192101D1E200FF5974 /* Product+CoreDataProperties.m in Sources */,
-				C75CA41F2101D1E200FF5974 /* Taxes+CoreDataProperties.m in Sources */,
-				C75CA4182101D1E200FF5974 /* Product+CoreDataClass.m in Sources */,
-				C75CA41C2101D1E200FF5974 /* Variant+CoreDataClass.m in Sources */,
 				C76CCBF220F35F2200C80859 /* ViewController.m in Sources */,
+				C75CA43F21023C8D00FF5974 /* Variant+CoreDataClass.m in Sources */,
 				C75CA4282101F78500FF5974 /* SubCategoriesTableViewController.m in Sources */,
 				C73D69BD20F44D4F006A6744 /* RankingViewController.m in Sources */,
 				C73D69C620F44DCB006A6744 /* ProductsTableViewController.m in Sources */,
 				C73D69C020F44D5E006A6744 /* DetailViewController.m in Sources */,
+				C75CA44221023C8D00FF5974 /* Categories+CoreDataProperties.m in Sources */,
+				C75CA44521023C8D00FF5974 /* Taxes+CoreDataClass.m in Sources */,
+				C75CA44621023C8D00FF5974 /* Taxes+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

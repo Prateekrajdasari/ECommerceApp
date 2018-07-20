@@ -18,10 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, copy) NSDate *dateAdded;
 @property (nullable, nonatomic, copy) NSString *name;
-@property (nonatomic) int16_t orderCount;
-@property (nonatomic) int16_t productId;
-@property (nonatomic) int16_t shareCount;
-@property (nonatomic) int16_t viewCount;
+@property (nonatomic) int32_t orderCount;
+@property (nonatomic) int32_t productId;
+@property (nonatomic) int32_t shareCount;
+@property (nonatomic) int32_t viewCount;
 @property (nullable, nonatomic, retain) Categories *category;
 @property (nullable, nonatomic, retain) Taxes *taxes;
 @property (nullable, nonatomic, retain) NSSet<Variant *> *variants;

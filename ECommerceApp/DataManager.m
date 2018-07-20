@@ -78,7 +78,6 @@ static DataManager *sharedInstance = nil;
                 
                 taxes.products = product;
                 
-                
                 NSMutableSet *productVariantsSet = [NSMutableSet set];
                 
                 for (NSDictionary *variantDict in productDict[@"variants"]) {

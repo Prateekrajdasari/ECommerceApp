@@ -16,10 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<Categories *> *)fetchRequest;
 
-@property (nonatomic) int16_t categoryId;
+@property (nonatomic) int32_t categoryId;
 @property (nullable, nonatomic, copy) NSString *name;
-@property (nonatomic) int16_t numberOfProducts;
-@property (nonatomic) int16_t numberofChildCategories;
+@property (nonatomic) int32_t numberOfProducts;
+@property (nonatomic) int32_t numberofChildCategories;
 @property (nullable, nonatomic, retain) NSSet<ChildCategories *> *childCategories;
 @property (nullable, nonatomic, retain) NSSet<Product *> *products;
 

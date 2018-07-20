@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<ChildCategories *> *)fetchRequest;
 
-@property (nonatomic) int16_t categoryId;
+@property (nonatomic) int32_t categoryId;
 @property (nullable, nonatomic, retain) Categories *category;
 
 @end
