@@ -102,7 +102,7 @@ static DataManager *sharedInstance = nil;
             }
             
             category.products = productsSet;
-            category.numberOfProducts = productsSet.count;
+            category.numberOfProducts = (int)productsSet.count;
         }
         
         if ([(NSArray *)categoryDict[@"child_categories"] count]) {
@@ -121,7 +121,7 @@ static DataManager *sharedInstance = nil;
                 [childSet addObject:childCategory];
             }
             category.childCategories = childSet;
-            category.numberofChildCategories = childSet.count;
+            category.numberofChildCategories = (int)childSet.count;
         }
     }
     

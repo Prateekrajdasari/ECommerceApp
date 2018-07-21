@@ -38,7 +38,12 @@
 
 - (void)databaseUpdated:(NSNotification *) notification {
     
-    [self.tableView reloadData];
+    [self getCategoriesFromCoreData];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [self.tableView reloadData];
+    });
 }
 
 - (void)getCategoriesFromCoreData {
