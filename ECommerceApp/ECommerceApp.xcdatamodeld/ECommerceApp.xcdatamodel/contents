@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Categories" representedClassName="Categories" syncable="YES">
         <attribute name="categoryId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="numberofChildCategories" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="numberOfProducts" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="childCategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChildCategories" inverseName="category" inverseEntity="ChildCategories" syncable="YES"/>
+        <relationship name="childrens" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Categories" inverseName="parentCategory" inverseEntity="Categories" syncable="YES"/>
+        <relationship name="parentCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categories" inverseName="childrens" inverseEntity="Categories" syncable="YES"/>
         <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="category" inverseEntity="Product" syncable="YES"/>
     </entity>
     <entity name="ChildCategories" representedClassName="ChildCategories" syncable="YES">
@@ -36,7 +38,7 @@
         <relationship name="products" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="variants" inverseEntity="Product" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Categories" positionX="-495" positionY="-258" width="128" height="133"/>
+        <element name="Categories" positionX="-495" positionY="-258" width="128" height="165"/>
         <element name="ChildCategories" positionX="-486" positionY="-15" width="128" height="73"/>
         <element name="Product" positionX="-263" positionY="-243" width="128" height="178"/>
         <element name="Taxes" positionX="-38" positionY="-252" width="128" height="88"/>
